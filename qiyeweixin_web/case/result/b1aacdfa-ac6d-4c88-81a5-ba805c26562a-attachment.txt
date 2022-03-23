@@ -1,0 +1,4 @@
+INFO     root:base_page.py:34 元素的定位方式为('id', 'username')， 元素的定位表达式为None
+INFO     root:base_page.py:34 元素的定位方式为id， 元素的定位表达式为memberAdd_acctid
+INFO     root:base_page.py:34 元素的定位方式为id， 元素的定位表达式为memberAdd_phone
+INFO     root:base_page.py:34 元素的定位方式为css selector， 元素的定位表达式为.js_btn_save
