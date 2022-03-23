@@ -10,6 +10,7 @@ class Events:
     def request(self, flow: mitmproxy.http.HTTPFlow):
         if "https://stock.xueqiu.com/v5/stock/batch/quote.json?_t" in flow.request.url and \
                 "x=" in flow.request.url:
+            # quote.json 是获取到的正常的响应体
             with open("quote.json", encoding="utf-8") as f:
                 flow.response = http.HTTPResponse.make(
                     #状态码
@@ -25,8 +26,9 @@ class Events:
             data = json.loads(flow.response.text)
             #修改数据
             data["data"]["items"][0]["quote"]["name"] = "szr"
+            new_data = self.recursion(data)
             #修改响应
-            flow.response.text = json.dumps(data)
+            flow.response.text = json.dumps(new_data)
 
     # 递归
     def recursion(self,data):
