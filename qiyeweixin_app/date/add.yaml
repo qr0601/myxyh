@@ -1,0 +1,13 @@
+add_datas:
+  -
+    - xiaoming
+    - 15883625119
+  - [xiaohong,15883625120]
+  - [xiaolan,15883625121]
+
+delete_datas:
+  - xiaoming
+  - xiaohong
+  - xiaolan
+
+

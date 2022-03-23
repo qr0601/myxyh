@@ -1,0 +1,2 @@
+INFO     root:test_contact.py:22 开始
+INFO     root:test_contact.py:37 111222333
