@@ -6,5 +6,5 @@ requests
 selenium
 urllib3
 logging
+jsonpath
 json
-logging
