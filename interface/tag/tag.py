@@ -47,6 +47,7 @@ class Tag(WeWork):
     def tag_delete(self, tag_id_list):
         data = {
             "url": "https://qyapi.weixin.qq.com/cgi-bin/externalcontact/del_corp_tag",
+            "method": "post",
             "params": {
                 "access_token": self.token,
             },
