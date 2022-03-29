@@ -5,3 +5,6 @@ pytest-testconfig
 requests
 selenium
 urllib3
+logging
+json
+logging
